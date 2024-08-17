@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+            android:id="@+id/one"
+            android:title="چندمین کلمه رو میخوای؟"
+
+            />
+    <item
+        android:id="@+id/trueorfalse"
+        android:title="کدوما رو درست زدم"
+
+        />
+    <item
+        android:id="@+id/two"
+        android:title="مرحله رو رد کن"
+        />
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nazanin_sarrafzadeh.faze4.RoundActivity">
+
+    <TextView
+        android:id="@+id/highscore"
+        android:layout_width="124dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="242dp"
+        android:text="TextView"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/highscore"
+        android:layout_marginTop="142dp"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="303dp"
+        android:textColor="#000000"
+        android:layout_alignLeft="@+id/highscore" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:textColor="#000000"
+        android:text="امتیاز"
+        android:textSize="50sp"
+        android:theme="@style/AppTheme"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="194dp"
+        android:textColor="#000000"
+        android:text="بیشترین امتیاز"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/goMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/orange_rounded_corner"
+        android:onClick="goToMenu"
+        android:textColor="#000000"
+        android:text="     منوی بازی ها"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <Button
+        android:id="@+id/goGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="#000000"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/goMenu"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/orange_rounded_corner"
+        android:onClick="goToGenre"
+        android:text="       ژانرها"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <Button
+        android:id="@+id/goPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/goMenu"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/orange_rounded_corner"
+        android:onClick="goAgain"
+        android:textColor="#000000"
+        android:text="     دوباره"
+        tools:layout_editor_absoluteX="264dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/newHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goMenu"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#000000"
+        android:lines="2"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:text="آفرین , رکورد جدید !"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/goldCup"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="132dp"
+        android:src="@drawable/cup" />
+
+</RelativeLayout>
